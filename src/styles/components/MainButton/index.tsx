@@ -7,11 +7,28 @@ border: none;
 border-radius: 20px;
 cursor: pointer;
 font-size: 15px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: sans-serif;
 color: #aaa;
-background-color: #140088;
+
+animation-duration: 3s;
+  animation-name: zoom;
+  animation-iteration-count: infinite;
 &:hover{
     color: #ddd;
     background-color: #0603ca;
+}
+@keyframes zoom{
+  0% {
+    background-color: rgb(76, 55, 194);
+
+  }
+
+  50% {
+    background-color: #0c0342;
+  }
+  100%{
+    background-color: rgb(76, 55, 194);
+
+  }
 }
 `;

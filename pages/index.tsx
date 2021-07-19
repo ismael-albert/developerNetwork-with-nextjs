@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MainButtonStyled } from '../src/styles/components/MainButton';
-import LandingPage from './LandingPage/index';
+import { PageContainerStyle } from '../src/styles/components/Page-container';
+import { PageMenuStyle } from '../src/styles/components/page-menu-container';
 
 
 const Home = () =>{
 return (
     <PageContainerStyle>
-        <LandingPageMenuStyle>
+        <PageMenuStyle>
             <img src={'logo.png'} alt="" />
-        </LandingPageMenuStyle>
+        </PageMenuStyle>
         <LandingPageBodyStyled>
             <h1>Encontre devs que cruzaram seu caminho</h1>
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum enim ullam alias. Modi quisquam neque dolores tenetur velit.</h3>
@@ -23,33 +24,9 @@ return (
 
 export default Home;
 
-export const PageContainerStyle = styled.div`
-
-background-image: url('background.jpg');
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-min-height: 100vh;
-
-display: flex;
-flex-direction: column;
-
-align-items: center;
-
-`;
-
-export const LandingPageMenuStyle = styled.div`
 
 
-max-width: 610px;
-width: 100%;
 
-align-items: center;
-img {
-    width: 64px
-    
-  }
-`;
 
 export const LandingPageBodyStyled = styled.div`
 
